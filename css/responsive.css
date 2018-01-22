@@ -110,7 +110,7 @@
 	}
 	.banner-info h2 {
 	    font-size: 85px;
-	    line-height: 50px;
+	    line-height: 70px;
 	}
 	.banner-info h3 {
 		letter-spacing: 15px;
@@ -125,7 +125,7 @@
 		font-size: 14px;
 	}
 	.skill-section .rating-bar {
-		width: 46%;
+		width: 33%;
 	}
 	.progress-content {
 		padding-right: 20px;
@@ -158,6 +158,9 @@
 	.section-padding {
 		padding-top: 30px;
 		padding-bottom: 50px;
+	}
+	.profile-section {
+		padding-top: 0;
 	}
 	.profile-section .section-padding {
 		padding: 50px 0;
@@ -501,7 +504,7 @@
 		padding-left: 25px;
 	}
 	.logo {
-	    background-color: #2d3038;
+	    background-color: black;
 	    height: 57px;
 	    padding: 8px 15px;
 	    max-width: 60%;
@@ -517,6 +520,10 @@
 		top: 100%;
 		margin-top: -40px;
 		margin-left: 20px;
+		right: 0;
+	}
+	.home-social i {
+		font-size: 4.5vmin;
 	}
 	.home-two .banner-info h1 {
 		font-size: 40px;
@@ -570,6 +577,9 @@
 	}
 	.exprience-info{
 		margin-bottom: 20px
+	}
+	.home-social i{
+		font-size: 5.5vmin;
 	}
 	#profile h3 {
 		font-size: 19px;
@@ -631,7 +641,7 @@
 		padding-left: 15px;
 	}
 	.home-two .home-social {
-		margin-left: 15px;
+		right: 0;
 	}
 	.home-one .logo {
 		max-width: 80%;

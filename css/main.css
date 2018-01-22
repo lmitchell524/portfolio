@@ -129,7 +129,7 @@ a:focus, button:focus, .btn:focus,
     left: -100%;
     width: 100%;
     height: 100%;
-    background-color: #fff;
+    background-color: black;
     z-index: -1;
 }
 
@@ -356,7 +356,7 @@ a:focus, button:focus, .btn:focus,
 
 #navigation .navbar:before {
     right:0;
-    background-color: #2d3038;
+    background-color: black;
     left: -100%;
 }
 
@@ -368,9 +368,16 @@ a:focus, button:focus, .btn:focus,
 }
 
 .logo {
-    background-color: #2d3038;
+    background-color: black;
     height: 76px;
     padding: 9px 25px 10px 15px;
+    width: 150px;
+    text-align: center;
+}
+
+.logo-img {
+    filter: invert(100%);
+    height: 100%;
 }
 
 .menu-two .navbar-fixed-top {
@@ -588,6 +595,10 @@ ul.sub-menu {
     line-height: 24px;
 }
 
+.about-info p {
+    font-size: 3vmin;
+}
+
 .about-info .signature h1 {
     font-weight: normal;
     margin-top: 20px;
@@ -603,6 +614,10 @@ ul.sub-menu {
 
 .about-section address span {
     font-weight: 700;
+}
+
+.about-section address span .email-dynamic {
+    font-weight: normal;
 }
 
 .achievement li {
@@ -870,13 +885,29 @@ ul.sub-menu {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #ef6e30;
+    /* background-color: #ef6e30; */
     color: #fff;
     -webkit-transition: all 500ms;
     -moz-transition: all 500ms;
     -ms-transition: all 500ms;
     -o-transition: all 500ms;
     transition: all 500ms;
+}
+
+.overlay-color-1 {
+    background-color: #e10337;
+}
+
+.overlay-color-2 {
+    background-color: #f7941d;
+}
+
+.overlay-color-3 {
+    background-color: #f4bf00;
+}
+
+.overlay-color-4 {
+    background-color: #87c05e;
 }
 
 .portfolio-item:hover .portfolio-overlay {
@@ -966,7 +997,7 @@ img.mfp-img {
 .contact-section li,
 .contact-section li a {
     font-size: 16px;
-    color: #2d3038;
+    color: whitesmoke;
 }
 
 .contact-section li a:hover {

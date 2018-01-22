@@ -12,6 +12,11 @@
 ==================================================
 */
 
+$(document).ready(function(){
+    console.log('ready');
+    $('.email-dynamic').text('lmitchell524@gmail.com');
+});
+
 // -------------------------------------------------------------
 //  Navigation Height
 // -------------------------------------------------------------
@@ -175,19 +180,19 @@ function Scroll() {
 //  Form
 // -------------------------------------------------------------
 
-function sendFormDate(){
-    var dataToSend = {
-        name = $('.name').val(),
-        email = $('.email').val(),
-        subject = $('.subject').val(),
-        message = $('.message').val()
-    }
-
-    $.ajax({
-        method: 'post',
-        dataType: 'json',
-        data: dataToSend,
-        url: ,
-        success:
-    })
-}
+// function sendFormDate(){
+//     var dataToSend = {
+//         name = $('.name').val(),
+//         email = $('.email').val(),
+//         subject = $('.subject').val(),
+//         message = $('.message').val()
+//     }
+//
+//     $.ajax({
+//         method: 'post',
+//         dataType: 'json',
+//         data: dataToSend,
+//         url: ,
+//         success:
+//     })
+// }
