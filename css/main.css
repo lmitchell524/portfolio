@@ -39,13 +39,14 @@ body {
     font-weight:normal;
     overflow-x:hidden;
     -webkit-font-smoothing: antialiased;
-    color: #2d3038;
+    color: whitesmoke;
+    background-color: black;
 }
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
-    color: #2d3038;
+    color: whitesmoke;
 }
 
 ul {
@@ -89,7 +90,7 @@ a:focus, button:focus, .btn:focus,
 }
 
 .bg-color {
-    background-color: #f9f9f9;
+    background-color: black;
     position: relative;
 }
 
@@ -483,14 +484,15 @@ ul.sub-menu {
 }
 
 .home-two #home-banner {
-    background-image: url(../images/bg/2.png);
+    background-image: url(../images/bg/nyc.jpg);
     background-repeat: no-repeat;
-    background-position: right;
-    background-size: contain;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
 }
 
 .banner-info {
-    text-shadow: 2px 2px 5px black;
+    text-shadow: 6px 6px 5px black;
 }
 
 .banner-info h1 {
@@ -555,16 +557,30 @@ ul.sub-menu {
     color: #00aeef;
 }
 
+.home-social i {
+    filter: invert(100%);
+    font-size: 2.5vmin;
+}
+
 
 /* About Section */
+
+.about-section, .skill-section, .exprience-section, .education-section, .portfolio-section {
+    border-bottom: 1px solid whitesmoke;
+}
 
 .about-section .section-title {
     margin-bottom: 45px;
 }
 
+.about-section .section-title h1 {
+    color: whitesmoke;
+}
+
 .about-section .section-title h4 {
     margin-top: 0;
     line-height: 0;
+    color: whitesmoke;
 }
 
 .about-info {
@@ -630,6 +646,9 @@ ul.sub-menu {
 
 .progress-content {
     overflow: hidden;
+    background-color: #eaeaea33;
+    padding-top: 5%;
+    text-align: center;
 }
 
 .bar-left {
@@ -812,6 +831,7 @@ ul.sub-menu {
     line-height: 24px;
     padding-bottom: 5px;
     padding-top: 10px;
+    text-align: center;
 }
 
 .education-info h3 {
@@ -832,6 +852,7 @@ ul.sub-menu {
     display: block;
     max-width: 77%;
     height: auto;
+    margin: auto;
 }
 
 /* Portfolio Section */
@@ -914,6 +935,10 @@ img.mfp-img {
 
 
 /* Contact Section */
+
+.contact-section {
+    padding-bottom: 0;
+}
 
 .contact-section .icons {
     float: left;
@@ -1214,8 +1239,12 @@ img.mfp-img {
     width: 50%;
 }
 
+.profile-section {
+    padding-top: 0;
+}
+
 .profile-section .section-padding {
-    padding-top: 110px;
+    /* padding-top: 110px; */
     padding-bottom: 120px;
 }
 

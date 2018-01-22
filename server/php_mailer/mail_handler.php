@@ -2,7 +2,7 @@
 require_once('email_config.php');
 require('phpmailer/PHPMailer/PHPMailerAutoload.php');
 $mail = new PHPMailer;
-$mail->SMTPDebug = 3;           // !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! Comment this out before putting on server!!!!!! Enable verbose debug output. Change to 0 to disable debugging output.
+$mail->SMTPDebug = 0;           // !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! Comment this out before putting on server!!!!!! Enable verbose debug output. Change to 0 to disable debugging output.
 
 //validate POST inputs
 $message = [];

@@ -13,27 +13,27 @@
 */
 
 // -------------------------------------------------------------
-//  Navigation Height 
+//  Navigation Height
 // -------------------------------------------------------------
 
 (function() {
 
     var height = $(window).height();
      $(".menu-one .navbar-nav").innerHeight(height);
-    
-}());    
-           
+
+}());
+
 // -------------------------------------------------------------
 //Mobile Toggle Control
 // -------------------------------------------------------------
 
-$(function(){ 
+$(function(){
     var navMain = $(".collapse");
     navMain.on("click", "a", null, function () {
         navMain.collapse('hide');
     });
-});     
-          
+});
+
 // -------------------------------------------------------------
 // Counter
 // -------------------------------------------------------------
@@ -43,7 +43,7 @@ $(function(){
     $('.counter').counterUp({
         delay: 10,
         time: 1000
-    
+
     });
 
 }());
@@ -96,7 +96,7 @@ $(function(){
 
             });
         }
-    }); 
+    });
 }());
 
 
@@ -119,9 +119,9 @@ $(function(){
 
 $(window).scroll(function(event) {
     Scroll();
-}); 
+});
 
-$('#mainmenu li a').click(function() {  
+$('#mainmenu li a').click(function() {
     $('html, body').animate({scrollTop: $(this.hash).offset().top -1}, 1000);
     return false;
 });
@@ -141,16 +141,16 @@ function Scroll() {
         if ( winTop > contentTop[i] - rangeTop ){
             $('#mainmenu li.scroll')
             .removeClass('current')
-            .eq(i).addClass('current');          
+            .eq(i).addClass('current');
         }
     })
 
 };
-    
+
 // -------------------------------------------------------------
 //  Sticky Nav
 // -------------------------------------------------------------
-(function () {  
+(function () {
     function menuToggle(){
         var windowWidth = $(window).width();
         if(windowWidth > 991 ){
@@ -162,14 +162,32 @@ function Scroll() {
                 };
             });
         }else{
-            
+
             $('.home-two .navbar').addClass('navbar-fixed-top');
-                
-        };  
+
+        };
     }
 
     menuToggle();
-}()); 
+}());
 
+// -------------------------------------------------------------
+//  Form
+// -------------------------------------------------------------
 
+function sendFormDate(){
+    var dataToSend = {
+        name = $('.name').val(),
+        email = $('.email').val(),
+        subject = $('.subject').val(),
+        message = $('.message').val()
+    }
 
+    $.ajax({
+        method: 'post',
+        dataType: 'json',
+        data: dataToSend,
+        url: ,
+        success:
+    })
+}
