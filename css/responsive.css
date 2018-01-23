@@ -53,6 +53,9 @@
   .navbar-left,.navbar-right {
       float: none !important;
   }
+  #navigation .navbar:after {
+	  background-color: black;
+  }
   .navbar-toggle {
       display: block;
       margin-top: 17px;
@@ -62,6 +65,9 @@
   }
   .navbar-nav {
       float: none!important;
+  }
+  .navbar {
+	  border: 1px solid #87c05e;
   }
   .navbar-nav>li {
       float: none;
@@ -230,6 +236,9 @@
 @media (max-width: 767px) {
 	#navigation .navbar:before {
 		width: 200%;
+	}
+	.navbar {
+		border-bottom: 1px solid #86c15e;
 	}
 	.navbar-toggle  {
 	 	margin-top:8px;

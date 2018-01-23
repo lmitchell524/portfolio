@@ -364,21 +364,21 @@
                                         </div>
                                         <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p> -->
                                     </div>
-                                    <form id="contact-form" class="contact-form" name="contact-form" method="post" action="#">
+                                    <form id="contact-form" class="contact-form" name="contact-form">
                                         <div class="row">
                                             <div class="col-sm-6">
                                                 <div class="form-group">
-                                                    <input name="name" type="text" class="form-control name" required="required" placeholder="Full Name">
+                                                    <input name="name" type="text" class="form-control name" required="required" placeholder="Full Name" value='hello'>
                                                 </div>
                                             </div>
                                             <div class="col-sm-6">
                                                 <div class="form-group">
-                                                    <input name="email" type="email" class="form-control email" required="required" placeholder="Email">
+                                                    <input name="email" type="email" pattern="^\w*[@]{1}[a-zA-Z]*\.[A-Za-z]{2,6}(?:\.{1}[A-Za-z]{2,6})?$" class="form-control email" placeholder="Email" value='hellof' required="required">
                                                 </div>
                                             </div>
                                             <div class="col-sm-12">
                                                 <div class="form-group">
-                                                    <input name="subject" type="text" class="form-control subject" required="required" placeholder="Subject">
+                                                    <input name="subject" type="text" class="form-control subject" required="required" placeholder="Subject" value='hello'>
                                                 </div>
                                             </div>
                                             <div class="col-sm-12">
@@ -388,7 +388,7 @@
                                             </div>
                                         </div>
                                         <div class="form-group pull-right">
-                                            <button type="submit" class="btn btn-primary">Submit</button>
+                                            <button type='submit' class="submit-btn btn btn-primary">Submit</button>
                                         </div>
                                     </form>
                                 </div>

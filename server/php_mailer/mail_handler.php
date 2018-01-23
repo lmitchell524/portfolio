@@ -11,6 +11,7 @@ $output = [
     'messages' => []
 ];
 
+
 //Sanitize name field
 $message['name'] = filter_var($_POST['name'], FILTER_SANITIZE_STRING);
 if(empty($message['name'])){
@@ -87,5 +88,5 @@ if(!$mail->send()) {
     $output['success'] = true;
 }
 
-print( json_encode($output));
+echo( json_encode($output));
 ?>
