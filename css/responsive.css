@@ -245,11 +245,14 @@
 	}
 	.banner-info h2 {
 		font-size: 50px;
-		line-height: 25px;
+		line-height: 45px;
 	}
 	.banner-info h3 {
 		font-size: 14px;
 		letter-spacing: 15px;
+	}
+	.banner-content, #home-banner {
+		height: 400px;
 	}
 	.section-padding {
 	    overflow: hidden;
@@ -286,7 +289,8 @@
 		line-height: 42px;
 	}
 	.skill-section .rating-bar {
-		width: 97%;
+		width: 32%;
+		float: left;
 	}
 	.bar-right {
 		float: none;
@@ -547,10 +551,13 @@
 
 	.banner-info h2 {
 		font-size: 48px;
-		line-height: 15px;
+		line-height: 45px;
 	}
 	.banner-info h3 {
 		letter-spacing: 8px;
+	}
+	.banner-content {
+		height: 400px;
 	}
 	.achievement {
 		text-align: left;
