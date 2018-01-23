@@ -109,6 +109,10 @@ a:focus, button:focus, .btn:focus,
     max-width: 750px;
 }
 
+.skill-content {
+    max-width: initial;
+}
+
 .btn.btn-primary {
     padding-left: 30px;
     padding-right: 30px;
@@ -656,7 +660,8 @@ ul.sub-menu {
 /* Skill Section */
 
 .skill-section .rating-bar {
-    width: 360px;
+    /* width: 360px; */
+    width: 33%;
 }
 
 .progress-content {
@@ -1004,24 +1009,6 @@ img.mfp-img {
     color: #87c05e;
 }
 
-.contact-section li:hover .icons,
-.contact-info:hover .icons {
-    -webkit-transform:rotate(360deg) ;
-    -moz-transform:rotate(360deg) ;
-    -ms-transform:rotate(360deg) ;
-    -o-transform:rotate(360deg) ;
-    transform:rotate(360deg) ;
-}
-
-.contact-section .icons,
-.contact-info .icons {
-    -webkit-transition: all 800ms;
-    -moz-transition: all 800ms;
-    -ms-transition: all 800ms;
-    -o-transition: all 800ms;
-    transition: all 800ms;
-}
-
 .contact-section .icons {
     color: #f7941d;
 }
@@ -1147,123 +1134,6 @@ img.mfp-img {
 .contact .form-control:-ms-input-placeholder {
    color: #2d3038;
 }
-
-/*!* Blog Section *!*/
-
-/*.blog-section .entry-post {*/
-    /*margin-bottom: 30px;*/
-    /*overflow: hidden;*/
-/*}*/
-
-/*.entry-thumbnail {*/
-    /*position: relative;*/
-    /*z-index: -1;*/
-    /*overflow: hidden;*/
-/*}*/
-
-/*.thumbnail-oberlay {*/
-    /*position: absolute;*/
-    /*top: 0;*/
-    /*left: 0;*/
-    /*width: 100%;*/
-    /*height: 100%;*/
-    /*border-radius: 50%;*/
-    /*background-color: rgba(45, 48, 56, 0.3); */
-    /*-webkit-transform: scale(0);*/
-    /*-moz-transform: scale(0);*/
-    /*-ms-transform: scale(0);*/
-    /*-o-transform: scale(0);*/
-    /*transform: scale(0);*/
-/*}*/
-
-/*.entry-post:hover .thumbnail-oberlay {*/
-    /*-webkit-transform: scale(1);*/
-    /*-moz-transform: scale(1);*/
-    /*-ms-transform: scale(1);*/
-    /*-o-transform: scale(1);*/
-    /*transform: scale(1);*/
-    /*border-radius: 0%;*/
-/*}*/
-
-/*.entry-post .time {*/
-    /*margin-top: -45px;*/
-    /*z-index: 1;*/
-/*}*/
-
-/*.entry-post .time a {*/
-    /*width: 84px;*/
-    /*height: 84px;*/
-    /*color: #fff;*/
-    /*font-size: 36px;    */
-    /*background-color: #f4bf00;*/
-    /*line-height: 60px;*/
-    /*text-align: center;*/
-    /*border-radius: 50%;*/
-    /*display: block;*/
-    /*font-weight: 700;*/
-    /*text-transform: uppercase;*/
-    /*-webkit-transition: all 900ms;*/
-    /*-moz-transition: all 900ms;*/
-    /*-ms-transition: all 900ms;*/
-    /*-o-transition: all 900ms;*/
-    /*transition: all 900ms;*/
-/*}*/
-
-/*.blog-section .entry-post:hover .time a {*/
-    /*border-radius: 0%;*/
-/*}*/
-
-/*.post-content .time.time1 a {*/
-    /*background-color: #f26522;*/
-/*}*/
-
-/*.post-content .time.time2 a {*/
-    /*background-color: #ed1c24;*/
-/*}*/
-
-/*.post-content .time.time3 a {*/
-    /*background-color: #b90162;*/
-/*}*/
-
-/*.post-content .time.time4 a {*/
-    /*background-color: #873e95;*/
-/*}*/
-
-/*.post-content .time.time5 a {*/
-    /*background-color: #87c05e;*/
-/*}*/
-
-/*.entry-post .time span {*/
-    /*display: block;*/
-    /*font-size: 16px;*/
-    /*line-height: 0;*/
-    /*margin-top: -2px;*/
-/*}*/
-
-/*.post-content {*/
-    /*border: 1px solid #f0f0f0;*/
-    /*padding-left: 35px;*/
-    /*padding-right: 35px;*/
-    /*padding-bottom: 30px;*/
-/*}*/
-
-/*.post-content h2 {*/
-    /*line-height: 21px;*/
-/*}*/
-
-/*.post-content h2 a  {*/
-    /*font-size: 18px;*/
-    /*color: #2d3038;*/
-    /*display: block;*/
-/*}*/
-
-/*.post-content h2 a:hover {*/
-    /*color: #87c05e;*/
-/*}*/
-
-
-/* Profile Section */
-
 
 .profile-img {
     height: 50%;

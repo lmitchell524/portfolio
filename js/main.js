@@ -13,8 +13,11 @@
 */
 
 $(document).ready(function(){
-    console.log('ready');
     $('.email-dynamic').text('lmitchell524@gmail.com');
+    var navMain = $(".collapse");
+    $('.scroll a').click(function(){
+        navMain.collapse('hide');
+    });
 });
 
 // -------------------------------------------------------------
@@ -39,6 +42,11 @@ $(function(){
     });
 });
 
+
+
+
+
+
 // -------------------------------------------------------------
 // Counter
 // -------------------------------------------------------------
@@ -57,26 +65,26 @@ $(function(){
 // Progress Bar
 // -------------------------------------------------------------
 
-(function () {
-
-    $('.progress-content').bind('inview', function(event, visible, visiblePartX, visiblePartY) {
-        if (visible) {
-            $.each($('div.progress-bar'),function(){
-                $(this).css('width', $(this).attr('aria-valuenow')+'%');
-            });
-            $(this).unbind('inview');
-        }
-    });
-    $('.rating-bar').bind('inview', function(event, visible, visiblePartX, visiblePartY) {
-        if (visible) {
-            $.each($('div.progress-bar'),function(){
-                $(this).css('width', $(this).attr('aria-valuenow')+'%');
-            });
-            $(this).unbind('inview');
-        }
-    });
-
-}());
+// (function () {
+//
+//     $('.progress-content').bind('inview', function(event, visible, visiblePartX, visiblePartY) {
+//         if (visible) {
+//             $.each($('div.progress-bar'),function(){
+//                 $(this).css('width', $(this).attr('aria-valuenow')+'%');
+//             });
+//             $(this).unbind('inview');
+//         }
+//     });
+//     $('.rating-bar').bind('inview', function(event, visible, visiblePartX, visiblePartY) {
+//         if (visible) {
+//             $.each($('div.progress-bar'),function(){
+//                 $(this).css('width', $(this).attr('aria-valuenow')+'%');
+//             });
+//             $(this).unbind('inview');
+//         }
+//     });
+//
+// }());
 
 
 
@@ -84,25 +92,25 @@ $(function(){
 // -------------------------------------------------------------
 // EasyPieChart
 // -------------------------------------------------------------
-
-(function () {
-
-    $('.language-skill').bind('inview', function(event, visible, visiblePartX, visiblePartY) {
-        if (visible) {
-            $('.chart').easyPieChart({
-                //your configuration goes here
-                easing: 'easeOut',
-                delay: 3000,
-                scaleColor: false,
-                animate: 2000,
-                onStep: function(from, to, percent) {
-                    this.el.children[0].innerHTML = Math.round(percent);
-                }
-
-            });
-        }
-    });
-}());
+//
+// (function () {
+//
+//     $('.language-skill').bind('inview', function(event, visible, visiblePartX, visiblePartY) {
+//         if (visible) {
+//             $('.chart').easyPieChart({
+//                 //your configuration goes here
+//                 easing: 'easeOut',
+//                 delay: 3000,
+//                 scaleColor: false,
+//                 animate: 2000,
+//                 onStep: function(from, to, percent) {
+//                     this.el.children[0].innerHTML = Math.round(percent);
+//                 }
+//
+//             });
+//         }
+//     });
+// }());
 
 
 // -------------------------------------------------------------
