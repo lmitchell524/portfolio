@@ -18,6 +18,7 @@ $(document).ready(function(){
     $('.scroll a').click(function(){
         navMain.collapse('hide');
     });
+    $('.submit-btn').click(sendFormData);
 });
 
 // -------------------------------------------------------------
@@ -41,11 +42,6 @@ $(function(){
         navMain.collapse('hide');
     });
 });
-
-
-
-
-
 
 // -------------------------------------------------------------
 // Counter
@@ -188,19 +184,26 @@ function Scroll() {
 //  Form
 // -------------------------------------------------------------
 
-// function sendFormDate(){
-//     var dataToSend = {
-//         name = $('.name').val(),
-//         email = $('.email').val(),
-//         subject = $('.subject').val(),
-//         message = $('.message').val()
-//     }
-//
-//     $.ajax({
-//         method: 'post',
-//         dataType: 'json',
-//         data: dataToSend,
-//         url: ,
-//         success:
-//     })
-// }
+function sendFormData(event){
+    event.preventDefault();
+    var dataToSend = {
+        name: $('.name').val(),
+        email: $('.email').val(),
+        subject: $('.subject').val(),
+        message: $('.message').val()
+    }
+
+    $.ajax({
+        method: 'POST',
+        dataType: 'json',
+        // contentType: "application/json",
+        data: dataToSend,
+        url: './server/php_mailer/mail_handler.php',
+        success: function(data){
+            console.log('success:', data);
+        },
+        error: function(error){
+            console.log('fail', error);
+        }
+    })
+}
