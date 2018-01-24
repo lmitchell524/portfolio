@@ -219,6 +219,10 @@ a:focus, button:focus, .btn:focus,
 
 }
 
+#navigation .navbar {
+    background-color: black;
+}
+
 .home-one .logo {
     /*height: 65px;*/
     float: none;
