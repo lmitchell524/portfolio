@@ -670,7 +670,7 @@ ul.sub-menu {
 
 .progress-content {
     overflow: hidden;
-    background-color: #eaeaea33;
+    /* background-color: #eaeaea33; */
     padding-top: 5%;
     text-align: center;
 }
@@ -797,6 +797,10 @@ ul.sub-menu {
 
 .text-info h4 {
     color: #2d3038;
+}
+
+.github, .atom {
+    filter: invert(85%);
 }
 
 /* Experience Section */
