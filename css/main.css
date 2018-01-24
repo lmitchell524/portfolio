@@ -360,7 +360,7 @@ a:focus, button:focus, .btn:focus,
 
 #navigation .navbar:before {
     right:0;
-    background-color: black;
+    background-color: rgba(17, 17, 17, 0.93);
     left: -100%;
 }
 
@@ -372,7 +372,7 @@ a:focus, button:focus, .btn:focus,
 }
 
 .logo {
-    background-color: black;
+    background-color: rgba(17, 17, 17, 0.93);
     height: 76px;
     padding: 9px 25px 10px 15px;
     width: 150px;

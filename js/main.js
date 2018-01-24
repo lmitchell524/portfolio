@@ -18,7 +18,7 @@ $(document).ready(function(){
     $('.scroll a').click(function(){
         navMain.collapse('hide');
     });
-    $('.submit-btn').click(sendFormData);
+    $('#contact-form').on('submit',sendFormData);
 });
 
 // -------------------------------------------------------------
@@ -185,7 +185,6 @@ function Scroll() {
 // -------------------------------------------------------------
 
 function sendFormData(event){
-    event.preventDefault();
     var dataToSend = {
         name: $('.name').val(),
         email: $('.email').val(),
@@ -196,14 +195,19 @@ function sendFormData(event){
     $.ajax({
         method: 'POST',
         dataType: 'json',
-        // contentType: "application/json",
         data: dataToSend,
-        url: './server/php_mailer/mail_handler.php',
+        url: 'server/php_mailer/mail_handler.php',
         success: function(data){
             console.log('success:', data);
+            $('.name').val('');
+            $('.email').val('');
+            $('.subject').val('');
+            $('.message').val('');
         },
         error: function(error){
             console.log('fail', error);
         }
     })
+    event.preventDefault();
+
 }

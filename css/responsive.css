@@ -54,7 +54,7 @@
       float: none !important;
   }
   #navigation .navbar:after {
-	  background-color: black;
+	  background-color: rgba(17, 17, 17, 0.93);
   }
   .navbar-toggle {
       display: block;
@@ -517,7 +517,7 @@
 		padding-left: 25px;
 	}
 	.logo {
-	    background-color: black;
+	    background-color: rgba(17, 17, 17, 0.93);
 	    height: 57px;
 	    padding: 8px 15px;
 	    max-width: 60%;
