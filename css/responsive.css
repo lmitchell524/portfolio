@@ -266,7 +266,7 @@
 	.section-padding {
 	    overflow: hidden;
 	    padding-bottom: 30px;
-	    padding-top: 30px;
+	    padding-top: 65px;
 	}
 	.about-section .section-title,
 	.section-title {
@@ -519,7 +519,7 @@
 	.logo {
 	    background-color: rgba(17, 17, 17, 0.93);
 	    height: 57px;
-	    padding: 8px 15px;
+	    padding: 0px;
 	    max-width: 60%;
 	}
 	.home-one .logo {
@@ -552,6 +552,13 @@
 	}
 	.home-banner-one .banner-content {
 		padding: 15px;
+	}
+	#resume{
+		text-align: center;
+	}
+
+	.profile-section{
+		padding-top: 30px;
 	}
 }
 
@@ -665,5 +672,11 @@
 	}
 	#navigation.menu-one .navbar-nav > li {
 		height: 12%;
+	}
+	.language-icon {
+			width: 40%;
+	}
+	.rating-bar label {
+		font-size: 14px;
 	}
 }
