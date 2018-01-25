@@ -886,6 +886,10 @@ ul.sub-menu {
 /* Portfolio Section */
 
 
+.portfolio-image {
+    width: 400px;
+}
+
 .portfolio-item {
     position: relative;
     margin-bottom: 30px;
@@ -944,8 +948,15 @@ ul.sub-menu {
 }
 
 .portfolio-info a {
-    font-size: 30px;
+    font-size: 22px;
     color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    display: block;
+}
+
+.portfolio-info a i {
+    margin-right: 5%;
 }
 
 .portfolio-info a:hover {
@@ -960,6 +971,7 @@ ul.sub-menu {
 
 img.mfp-img {
     padding:12px;
+    height: 400px;
 }
 
 .mfp-image-holder .mfp-close {

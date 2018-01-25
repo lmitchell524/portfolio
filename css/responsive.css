@@ -592,6 +592,9 @@
 		display: inline-block;
 		width: 49%;
 	}
+	img.mfp-img {
+	    height: 250px;
+	}
 	.exprience-image {
 		float: none;
 		height: inherit;

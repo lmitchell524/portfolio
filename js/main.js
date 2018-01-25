@@ -131,7 +131,12 @@ $(window).scroll(function(event) {
 });
 
 $('#mainmenu li a').click(function() {
-    $('html, body').animate({scrollTop: $(this.hash).offset().top -1}, 1000);
+    var menuHeight = $("#mainmenu > .navbar-nav").height();
+    if(!$("#navigation > .navbar").hasClass('navbar-fixed-top')){
+        menuHeight *= 2;
+    }
+    console.log('height is '+ menuHeight);
+    $('html').animate({scrollTop: $(this.hash).offset().top -1-menuHeight}, 1000);
     return false;
 });
 
