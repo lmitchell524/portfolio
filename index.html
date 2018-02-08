@@ -6,8 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="author" content="Theme Region">
         <meta name="description" content="">
-
-        <title>Geek | Personal Portfolio & Resume HTML Template.</title>
+        <title>Lori Mitchell</title>
 
         <!-- CSS -->
         <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -21,7 +20,7 @@
         <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Sacramento" rel="stylesheet">
 
         <!-- icons -->
-        <link rel="icon" href="images/ico/favicon.ico">
+        <link rel="icon" type="image/png" href="./images/equality.png">
         <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../images/ico/apple-touch-icon-144-precomposed.png">
         <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../images/ico/apple-touch-icon-114-precomposed.png">
         <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../images/ico/apple-touch-icon-72-precomposed.png">
@@ -44,9 +43,9 @@
                             <div class="banner-content">
                                 <div class="home-social">
                                     <ul class="list-inline">
-                                        <li><a href="#"><i class="fa fa-envelope-o" aria-hidden="true"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-github-alt" aria-hidden="true"></i></a></li>
+                                        <!-- <li><a href="#"><i class="fa fa-envelope-o" aria-hidden="true" target="_blank"></i></a></li> -->
+                                        <li><a href="https://www.linkedin.com/in/lorimitchell524"><i class="fa fa-linkedin" aria-hidden="true" target="_blank"></i></a></li>
+                                        <li><a href="https://github.com/lmitchell524"><i class="fa fa-github-alt" aria-hidden="true" target="_blank"></i></a></li>
                                     </ul>
                                 </div>
                                 <div class="banner-info">
@@ -70,7 +69,7 @@
                                 <span class="icon-bar"></span>
                             </button>
                              <div class="navbar-brand logo">
-                                <a href="index.html"><img class="img-responsive" src="images/logo.png" alt="Image" ></a>
+                                <a href="index.html"><img class='logo-img' src='./images/equality.png' /></a>
                             </div>
                         </div>
                         <div class="collapse navbar-collapse"> <!--navbar-collapse padding from bs-min-css causing issues on larger screen-->
@@ -79,9 +78,9 @@
                                     <li class=" scroll current"><a href="#home-banner">Home</a></li>
                                     <li class="scroll"><a href="#about">About Me</a></li>
                                      <li class="scroll"><a href="#skill">Skills</a></li>
+                                     <li class="scroll"><a href="#portfolio">Portfolio</a></li>
                                      <li class="scroll"><a href="#exprience">Experience</a></li>
                                      <li class="scroll"><a href="#education">Education</a></li>
-                                     <li class="scroll"><a href="#portfolio">Portfolio</a></li>
                                      <li class="scroll"><a href="#contact">Contact</a></li>
                                      <li class="scroll"><a href="#resume">Resume</a></li>
                                 </ul>
@@ -90,23 +89,24 @@
                     </div><!-- navbar -->
                 </div><!-- navigation -->
             </div><!-- container -->
-
             <div id="about" class="about-section section-padding">
                 <div class="container">
                     <div class="row">
-                        <div class="col-sm-12 col-md-8">
-                            <div class="section-title">
+                        <div class="col-sm-12 col-md-6">
+                            <!-- <div class="section-title">
                                 <h1>Lori Mitchell</h1>
                                 <h4>Web Developer</h4>
-                            </div>
+                            </div> -->
                             <div class="about-info">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                <p>
+                                    Hailing from Smithville, Missouri, I have a passion for travel, a strong liking to the Kansas City Chiefs and a keen desire to code.
+                                </p>
                                 <!--<div class="signature">-->
                                     <!--<h1>Surzil Geek</h1>-->
                                 <!--</div>-->
                             </div>
                             <address>
-                                <p><span>Email:</span>/p>
+                                <p><span>Email: <span class='email-dynamic'></span></span></p>
                                 <p><span>Address:</span> Huntington Beach, CA</p>
                             </address>
                         </div>
@@ -117,13 +117,13 @@
             <div id="skill" class="skill-section bg-color section-padding">
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-8">
-                            <div class="section-content">
-                                <div class="section-title">
+                        <div class="col-md-12">
+                            <div class="section-content skill-content">
+                                <div class="section-title col-sm-4">
                                     <h1>Skills</h1>
                                 </div>
                                 <div class="progress-content">
-                                    <div class="rating-bar bar-left col-sm-6">
+                                    <div class="rating-bar bar-left col-sm-4">
                                         <label>HTML 5</label>
                                         <div>
                                             <img class="language-icon" src="images/icons/html5/html5-original.svg">
@@ -134,6 +134,16 @@
                                                 <img class="language-icon" src="images/icons/css3/css3-original.svg">
                                             </div>
                                         </div>
+                                        <label>ATOM</label>
+                                        <div>
+                                            <img class="language-icon atom" src="images/icons/atom/atom-original.svg">
+                                        </div>
+                                        <label>SLACK</label>
+                                        <div>
+                                            <img class="language-icon" src="images/icons/slack/slack-original.svg">
+                                        </div>
+                                    </div>
+                                    <div class="rating-bar col-sm-4 middle">
                                         <label>JAVASCRIPT</label>
                                         <div>
                                             <img class="language-icon" src="images/icons/javascript/javascript-original.svg">
@@ -142,17 +152,16 @@
                                         <div>
                                             <img class="language-icon" src="images/icons/jquery/jquery-original.svg">
                                         </div>
-                                        <label>ATOM</label>
+                                        <label>BITBUCKET</label>
                                         <div>
-                                            <img class="language-icon" src="images/icons/atom/atom-original.svg">
+                                            <img class="language-icon" src="images/icons/bitbucket/bitbucket-original.svg">
                                         </div>
-                                        <label>SLACK</label>
+                                        <label>PHPSTORM</label>
                                         <div>
-                                            <img class="language-icon" src="images/icons/slack/slack-original.svg">
+                                            <img class="language-icon" src="images/icons/phpstorm/phpstorm-original.svg">
                                         </div>
                                     </div>
-
-                                    <div class="skill rating-bar bar-right col-sm-6">
+                                    <div class="skill rating-bar bar-right col-sm-4">
                                         <label>REACT</label>
                                         <div>
                                             <img class="language-icon" src="images/icons/react/react-original.svg">
@@ -165,19 +174,11 @@
                                         </div>
                                         <label>GITHUB</label>
                                         <div>
-                                            <img class="language-icon" src="images/icons/github/github-original.svg">
+                                            <img class="language-icon github" src="images/icons/github/github-original.svg">
                                         </div>
                                         <label>BOOTSTRAP</label>
                                         <div>
                                             <img class="language-icon" src="images/icons/bootstrap/bootstrap-plain.svg">
-                                        </div>
-                                        <label>BITBUCKET</label>
-                                        <div>
-                                            <img class="language-icon" src="images/icons/bitbucket/bitbucket-original.svg">
-                                        </div>
-                                        <label>PHPSTORM</label>
-                                        <div>
-                                            <img class="language-icon" src="images/icons/phpstorm/phpstorm-original.svg">
                                         </div>
                                     </div>
                                 </div>
@@ -186,84 +187,6 @@
                     </div><!-- row -->
                 </div><!-- container -->
             </div><!-- skill section -->
-            <div id="exprience" class="exprience-section section-padding">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-sm-4">
-                            <div class="section-title">
-                                <h1>Exprience</h1>
-                            </div>
-                        </div>
-                        <div class="col-sm-8">
-                            <div class="text-info">
-                                <h4>15 Years Exprience</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-                            </div>
-                            <div class="exprience">
-                                <div class="exprience-image">
-                                    <img class="img-responsive" src="images/exprience/1.png" alt="Image">
-                                </div>
-                                <div class="exprience-info">
-                                    <h3>Senior Graphic Designer</h3>
-                                    <h5>July, 2012 - Present (4 years)</h5>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-                                </div>
-                            </div>
-                            <hr>
-                            <div class="exprience">
-                                <div class="exprience-image">
-                                    <img class="img-responsive" src="images/exprience/2.png" alt="Image">
-                                </div>
-                                <div class="exprience-info">
-                                    <h3>Former Graphic Designer</h3>
-                                    <h5>March, 2011 - June, 2012 (1 year, 3 Month)</h5>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-                                </div>
-                            </div>
-                            <hr>
-                            <div class="exprience">
-                                <div class="exprience-image">
-                                    <img class="img-responsive" src="images/exprience/3.png" alt="Image">
-                                </div>
-                                <div class="exprience-info">
-                                    <h3>Head of Design</h3>
-                                    <h5>March, 2005 - March, 2011 (6 years)</h5>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div><!-- row -->
-                </div><!-- container -->
-            </div><!-- exprience section -->
-            <div id="education" class="education-section bg-color section-padding">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-8">
-                            <div class="section-content">
-                                <div class="section-title">
-                                    <h1>Education</h1>
-                                </div>
-                                <div class="education-info">
-                                    <img class="education-img" src="images/education/mizzou.png" alt="Image">
-                                    <h3>University of Missouri</h3>
-                                    <h5>Bachalor of Science - Business Management</h5>
-                                    <h6>Graduated 2010</h6>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-                                </div>
-                                <hr>
-                                <div class="education-info">
-                                    <img class="education-img" src="images/education/lfz.png" alt="Image">
-                                    <h3>LearningFuze</h3>
-                                    <h5></h5>
-                                    <h6>2018</h6>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div><!-- row -->
-                </div><!-- container -->
-            </div><!-- education section -->
-
             <div id="portfolio" class="portfolio-section section-padding">
                 <div class="container">
                     <div class="row">
@@ -274,55 +197,52 @@
                         </div>
                         <div class="col-sm-8">
                             <div class="text-info">
-                                <h4>My Recent Work</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                                <h4></h4>
+                                <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p> -->
                             </div>
                             <div class="portfolio-content">
                                 <div class="row">
                                     <div class="col-sm-6">
-                                        <div class="portfolio-item">
-                                            <img class="img-responsive" src="images/portfolio/1.jpg" alt="Image">
-                                            <div class="portfolio-overlay">
+                                        <div class="portfolio-item portfolio-item1 img-responsive">
+                                            <div class="portfolio-overlay overlay-color-1">
+                                                <h3>Final Transmissions</h3>
                                                 <div class="portfolio-info">
-                                                    <a href="images/portfolio/1.jpg"><i class="fa fa-camera-retro" aria-hidden="true"></i></a>
-                                                    <h3>Book Cover</h3>
-                                                    <p>Print Design</p>
+                                                    <a href='https://finaltransmissions.com' target='_blank' class='live'><i class='fa fa-desktop' aria-hidden="true"></i> Live</a>
+                                                    <a href='#' class='code'><i class='fa fa-code' aria-hidden="true"></i> Code</a>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col-sm-6">
-                                        <div class="portfolio-item">
-                                            <img class="img-responsive" src="images/portfolio/2.jpg" alt="Image">
-                                            <div class="portfolio-overlay">
+                                        <div class="portfolio-item portfolio-item2 img-responsive">
+                                            <div class="portfolio-overlay overlay-color-2">
+                                                <h3></h3>
                                                 <div class="portfolio-info">
-                                                    <a href="images/portfolio/2.jpg"><i class="fa fa-camera-retro" aria-hidden="true"></i></a>
-                                                    <h3>Book Cover</h3>
-                                                    <p>Print Design</p>
+                                                    <a href='apps/memorymatch/' target='_blank' class='live'><i class='fa fa-desktop' aria-hidden="true"></i> Live</a>
+                                                    <a href='#' class='code'><i class='fa fa-code' aria-hidden="true"></i> Code</a>
+
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col-sm-6">
-                                        <div class="portfolio-item">
-                                            <img class="img-responsive" src="images/portfolio/3.jpg" alt="Image">
-                                            <div class="portfolio-overlay">
+                                        <div class="portfolio-item portfolio-item3 img-responsive">
+                                            <div class="portfolio-overlay overlay-color-3">
+                                                <h3>Trothello</h3>
                                                 <div class="portfolio-info">
-                                                    <a href="images/portfolio/3.jpg"><i class="fa fa-camera-retro" aria-hidden="true"></i></a>
-                                                    <h3>Book Cover</h3>
-                                                    <p>Print Design</p>
+                                                    <a href='apps/trothello/' target='_blank' class='live'><i class='fa fa-desktop' aria-hidden="true"></i> Live</a>
+                                                    <a href='#' class='code'><i class='fa fa-code' aria-hidden="true"></i> Code</a>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col-sm-6">
-                                        <div class="portfolio-item">
-                                            <img class="img-responsive" src="images/portfolio/4.jpg" alt="Image">
-                                            <div class="portfolio-overlay">
+                                        <div class="portfolio-item portfolio-item4 img-responsive">
+                                            <div class="portfolio-overlay overlay-color-4">
+                                                <h3>Trivia Fighter</h3>
                                                 <div class="portfolio-info">
-                                                    <a href="images/portfolio/4.jpg"><i class="fa fa-camera-retro" aria-hidden="true"></i></a>
-                                                    <h3>Book Cover</h3>
-                                                    <p>Print Design</p>
+                                                    <a href='apps/trivia_fighter/' target='_blank' class='live'><i class='fa fa-desktop' aria-hidden="true"></i> Live</a>
+                                                    <a href='#' class='code'><i class='fa fa-code' aria-hidden="true"></i> Code</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -333,7 +253,72 @@
                     </div><!-- row -->
                 </div><!-- container -->
             </div><!-- portfolio section -->
+            <div id="exprience" class="exprience-section section-padding">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <div class="section-title">
+                                <h1>Experience</h1>
+                            </div>
+                        </div>
+                        <div class="col-sm-8">
+                            <div class="text-info">
+                                <h4></h4>
+                            </div>
+                            <div class="exprience">
+                                <!-- <div class="exprience-image">
+                                    <img class="img-responsive" src="images/exprience/1.png" alt="Image">
+                                </div> -->
+                                <div class="exprience-info">
+                                    <h3>Panattoni Development Company, Inc.</h3>
+                                    <h5>2015 - 2017 - Assistant to the CEO</h5>
+                                    <p>
 
+                                    </p>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="exprience">
+                                <!-- <div class="exprience-image">
+                                    <img class="img-responsive" src="images/exprience/2.png" alt="Image">
+                                </div> -->
+                                <div class="exprience-info">
+                                    <h3>Douglas T. Sakurai, DDS</h3>
+                                    <h5>2010 - 2015 - Office Manager</h5>
+                                    <p>
+
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- row -->
+                </div><!-- container -->
+            </div><!-- exprience section -->
+            <div id="education" class="education-section bg-color section-padding">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-8">
+                            <div class="section-content row">
+                                <div class="section-title">
+                                    <h1>Education</h1>
+                                </div>
+                                <div class="education-info col-md-12 col-md-offset-4">
+                                    <img class="education-img" src="images/education/tiger.png" alt="Image">
+                                    <h3>University of Missouri</h3>
+                                    <h5>Bachelor of Science - Business Management</h5>
+                                    <h6>Graduated 2010</h6>
+                                </div>
+                                <div class="education-info col-md-12 col-md-offset-4">
+                                    <img class="education-img" src="images/education/lfz.png" alt="Image">
+                                    <h3>LearningFuze</h3>
+                                    <h5></h5>
+                                    <h6>2018</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- row -->
+                </div><!-- container -->
+            </div><!-- education section -->
             <div id="contact" class="contact-section bg-color section-padding">
                 <div class="container">
                     <div class="row">
@@ -355,14 +340,14 @@
                                                 <i class="fa fa-map-signs" aria-hidden="true"></i>
                                             </div>
                                             <h3>Address</h3>
-                                            <p>123 West 12th Street, Suite 456 New York, NY 123456</p>
+                                            <p>Huntington Beach, CA</p>
                                         </li>
                                         <li>
                                             <div class="icons icons2">
                                                 <i class="fa fa-envelope-o" aria-hidden="true"></i>
                                             </div>
                                             <h3>Email address</h3>
-                                            <a href="#">itsme@surzilgeek.com</a>
+                                            <a class='email-dynamic' href="#"></a>
                                         </li>
                                     </ul>
                                 </div>
@@ -372,35 +357,35 @@
                                             <div class="icons">
                                                 <i class="fa fa-commenting-o" aria-hidden="true"></i>
                                             </div>
-                                            <h3>Leave me a message</h3>
+                                            <h3>Leave a message</h3>
                                         </div>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                                        <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p> -->
                                     </div>
-                                    <form id="contact-form" class="contact-form" name="contact-form" method="post" action="#">
+                                    <form id="contact-form" class="contact-form" name="contact-form">
                                         <div class="row">
                                             <div class="col-sm-6">
                                                 <div class="form-group">
-                                                    <input type="text" class="form-control" required="required" placeholder="Full Name">
+                                                    <input name="name" type="text" class="form-control name" required="required" placeholder="Full Name">
                                                 </div>
                                             </div>
                                             <div class="col-sm-6">
                                                 <div class="form-group">
-                                                    <input type="email" class="form-control" required="required" placeholder="Your email id">
+                                                    <input name="email" type="email" pattern="^\w*[@]{1}[a-zA-Z]*\.[A-Za-z]{2,6}(?:\.{1}[A-Za-z]{2,6})?$" class="form-control email" placeholder="Email" required="required">
                                                 </div>
                                             </div>
                                             <div class="col-sm-12">
                                                 <div class="form-group">
-                                                    <input type="text" class="form-control" required="required" placeholder="Subject">
+                                                    <input name="subject" type="text" class="form-control subject" required="required" placeholder="Subject">
                                                 </div>
                                             </div>
                                             <div class="col-sm-12">
                                                 <div class="form-group">
-                                                    <textarea name="message" required="required" class="form-control" rows="7" placeholder="Your message"></textarea>
+                                                    <textarea name="message" required="required" class="form-control message" rows="7" placeholder="Your message"></textarea>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="form-group pull-right">
-                                            <button type="submit" class="btn btn-primary">Submit</button>
+                                            <button type='submit' class="submit-btn btn btn-primary">Submit</button>
                                         </div>
                                     </form>
                                 </div>
@@ -413,132 +398,10 @@
                 <div class="container">
                     <div class="row">
                     <div class="col-sm-4">
-                            <div class="section-title">
-                                <h1>Resume</h1>
-                            </div>
                         </div>
                         <div class="col-sm-8">
-                            <div class="section-content">
-                                <!-- <div class="profile-logo">
-                                    <img class="img-responsive" src="images/profile.jpg" alt="Image">
-                                </div>
-                                <div class="profile-info">
-                                    <h1>Surzil Geek</h1>
-                                    <h4>Web Developer</h4>
-                                    <address>
-                                        <p>Address: 123 West 12th Street, Suite 456 New York, NY 123456 <br> Phone: +012 345 678 910 <br> <a href="#">Email: itsme@surzilegeek.com</a></p>
-                                    </address>
-                                </div>
-                                <div class="career-objective">
-                                    <div class="title">
-                                        <div class="icons">
-                                            <i class="fa fa-black-tie" aria-hidden="true"></i>
-                                        </div>
-                                        <h3>Career Objective</h3>
-                                   </div>
-                                    <div class="sub-content">
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-                                    </div>
-                                </div>
-                                <hr>
-                                <div class="work-history">
-                                    <div class="title">
-                                        <div class="icons">
-                                            <i class="fa fa-briefcase" aria-hidden="true"></i>
-                                        </div>
-                                        <h3>Work History</h3>
-                                    </div>
-                                    <div class="sub-content">
-                                        <div class="history">
-                                            <h5>Senior Graphic Designer @ Buildomo</h5>
-                                            <h6>2012 - Present</h6>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                                        </div>
-                                        <hr>
-                                        <div class="history">
-                                            <h5>Former Graphic Designer @ Ideame</h5>
-                                            <h6>2011 - 2012</h6>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                                        </div>
-                                        <hr>
-                                        <div class="history">
-                                            <h5>Head of Design @ Titan Compnay</h5>
-                                            <h6>2005 - 2011</h6>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                                        </div>
-                                        <hr>
-                                        <div class="history">
-                                            <h5>Graphic Designer @ Precision</h5>
-                                            <h6>2004 - 2005</h6>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                                        </div>
-                                        <hr>
-                                        <div class="history">
-                                            <h5>Graphic Designer (Intern) @ Costa Rica Fruit Compnay</h5>
-                                            <h6>2002 - 2004</h6>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <hr>
-                                <div class="educational-background">
-                                    <div class="title">
-                                        <div class="icons">
-                                            <i class="fa fa-graduation-cap" aria-hidden="true"></i>
-                                        </div>
-                                        <h3>Educational Background</h3>
-                                    </div>
-                                    <div class="sub-content">
-                                        <div class="education">
-                                            <h5>Masters of Arts @ Montana Satet University</h5>
-                                            <p>1999 - 2001</p>
-                                        </div>
-                                        <hr>
-                                        <div class="education">
-                                            <h5>Bachalor of Arts @ Universty of Bristol</h5>
-                                            <p>1995 - 1999</p>
-                                        </div>
-                                        <hr>
-                                        <div class="education">
-                                            <h5>Diploma in Graphics Design @ Cincinnati Christian University</h5>
-                                            <p>1993 - 1995</p>
-                                        </div>
-                                    </div>
-                                </div> -->
-                                <div class="personal-info">
-                                    <div class="title">
-                                        <div class="icons">
-                                            <i class="fa fa-user-secret" aria-hidden="true"></i>
-                                        </div>
-                                        <h3>Personal Info</h3>
-                                    </div>
-                                    <div class="sub-content">
-                                        <ul class="address">
-                                            <li><h5>Full Name </h5> <span>:</span>Lori Mitchell</li>
-                                            <li><h5>Address </h5> <span>:</span>Huntington Beach, CA</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <hr>
-                                <div class="portfolio">
-                                    <div class="title">
-                                        <div class="icons">
-                                            <i class="fa fa-picture-o" aria-hidden="true"></i>
-                                        </div>
-                                        <h3>Portfolio</h3>
-                                    </div>
-                                    <div class="sub-content">
-                                        <ul>
-                                            <li><h5>Dribbble </h5> <span>:</span><a href="#">dribbble.com/geek</a></li>
-                                            <li><h5>Website </h5> <span>:</span><a href="#">www.surzilgeek.com/portfolio</a></li>
-                                            <li><h5>Flicker </h5> <span>:</span><a href="#">www.flicker.com/geek-photography</a></li>
-                                            <li><h5>Behance </h5> <span>:</span><a href="#">www.behance.com/geekin</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
                             <div id="resume" class="button">
-                                <a href="#" class="btn btn-primary">Download My Resume as a .pdf file</a>
+                                <a href="#" class="btn btn-primary">Download My Resume</a>
                             </div>
                         </div>
                     </div>
@@ -547,7 +410,7 @@
             <div id="footer">
                 <div class="container text-center">
                     <div class="footer">
-                        <p> &copy; 2016 <a href="#">Surzil Geek.</a> All Rights Reserved</p>
+                        <p> &copy; 2018 <a href="#">Lori Mitchell</a></p>
                     </div>
                 </div><!-- contaner -->
             </div><!-- footer -->
@@ -559,7 +422,7 @@
         <script src="js/waypoints.min.js"></script>
         <script src="js/counterup.min.js"></script>
         <script src="js/inview.min.js"></script>
-        <script src="js/easypiechart.js"></script>
+        <!-- <script src="js/easypiechart.js"></script> -->
         <script src="js/magnific-popup.min.js"></script>
         <script src="js/main.js"></script>
     </body>

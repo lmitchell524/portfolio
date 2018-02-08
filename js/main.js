@@ -12,28 +12,37 @@
 ==================================================
 */
 
+$(document).ready(function(){
+    $('.email-dynamic').text('lmitchell524@gmail.com');
+    var navMain = $(".collapse");
+    $('.scroll a').click(function(){
+        navMain.collapse('hide');
+    });
+    $('#contact-form').on('submit',sendFormData);
+});
+
 // -------------------------------------------------------------
-//  Navigation Height 
+//  Navigation Height
 // -------------------------------------------------------------
 
 (function() {
 
     var height = $(window).height();
      $(".menu-one .navbar-nav").innerHeight(height);
-    
-}());    
-           
+
+}());
+
 // -------------------------------------------------------------
 //Mobile Toggle Control
 // -------------------------------------------------------------
 
-$(function(){ 
+$(function(){
     var navMain = $(".collapse");
     navMain.on("click", "a", null, function () {
         navMain.collapse('hide');
     });
-});     
-          
+});
+
 // -------------------------------------------------------------
 // Counter
 // -------------------------------------------------------------
@@ -43,7 +52,7 @@ $(function(){
     $('.counter').counterUp({
         delay: 10,
         time: 1000
-    
+
     });
 
 }());
@@ -52,26 +61,26 @@ $(function(){
 // Progress Bar
 // -------------------------------------------------------------
 
-(function () {
-
-    $('.progress-content').bind('inview', function(event, visible, visiblePartX, visiblePartY) {
-        if (visible) {
-            $.each($('div.progress-bar'),function(){
-                $(this).css('width', $(this).attr('aria-valuenow')+'%');
-            });
-            $(this).unbind('inview');
-        }
-    });
-    $('.rating-bar').bind('inview', function(event, visible, visiblePartX, visiblePartY) {
-        if (visible) {
-            $.each($('div.progress-bar'),function(){
-                $(this).css('width', $(this).attr('aria-valuenow')+'%');
-            });
-            $(this).unbind('inview');
-        }
-    });
-
-}());
+// (function () {
+//
+//     $('.progress-content').bind('inview', function(event, visible, visiblePartX, visiblePartY) {
+//         if (visible) {
+//             $.each($('div.progress-bar'),function(){
+//                 $(this).css('width', $(this).attr('aria-valuenow')+'%');
+//             });
+//             $(this).unbind('inview');
+//         }
+//     });
+//     $('.rating-bar').bind('inview', function(event, visible, visiblePartX, visiblePartY) {
+//         if (visible) {
+//             $.each($('div.progress-bar'),function(){
+//                 $(this).css('width', $(this).attr('aria-valuenow')+'%');
+//             });
+//             $(this).unbind('inview');
+//         }
+//     });
+//
+// }());
 
 
 
@@ -79,39 +88,39 @@ $(function(){
 // -------------------------------------------------------------
 // EasyPieChart
 // -------------------------------------------------------------
-
-(function () {
-
-    $('.language-skill').bind('inview', function(event, visible, visiblePartX, visiblePartY) {
-        if (visible) {
-            $('.chart').easyPieChart({
-                //your configuration goes here
-                easing: 'easeOut',
-                delay: 3000,
-                scaleColor: false,
-                animate: 2000,
-                onStep: function(from, to, percent) {
-                    this.el.children[0].innerHTML = Math.round(percent);
-                }
-
-            });
-        }
-    }); 
-}());
+//
+// (function () {
+//
+//     $('.language-skill').bind('inview', function(event, visible, visiblePartX, visiblePartY) {
+//         if (visible) {
+//             $('.chart').easyPieChart({
+//                 //your configuration goes here
+//                 easing: 'easeOut',
+//                 delay: 3000,
+//                 scaleColor: false,
+//                 animate: 2000,
+//                 onStep: function(from, to, percent) {
+//                     this.el.children[0].innerHTML = Math.round(percent);
+//                 }
+//
+//             });
+//         }
+//     });
+// }());
 
 
 // -------------------------------------------------------------
 // MagnificPopup
 // -------------------------------------------------------------
 
-(function () {
-    $('.portfolio-info a').magnificPopup({
-      type: 'image',
-      gallery:{
-        enabled:true
-      }
-    });
-}());
+// (function () {
+//     $('.portfolio-info a').magnificPopup({
+//       type: 'image',
+//       gallery:{
+//         enabled:true
+//       }
+//     });
+// }());
 
 // -------------------------------------------------------------
 // Navigation Scroll
@@ -119,10 +128,15 @@ $(function(){
 
 $(window).scroll(function(event) {
     Scroll();
-}); 
+});
 
-$('#mainmenu li a').click(function() {  
-    $('html, body').animate({scrollTop: $(this.hash).offset().top -1}, 1000);
+$('#mainmenu li a').click(function() {
+    var menuHeight = $("#mainmenu > .navbar-nav").height();
+    if(!$("#navigation > .navbar").hasClass('navbar-fixed-top')){
+        menuHeight *= 2;
+    }
+    console.log('height is '+ menuHeight);
+    $('html').animate({scrollTop: $(this.hash).offset().top -1-menuHeight}, 1000);
     return false;
 });
 
@@ -141,16 +155,16 @@ function Scroll() {
         if ( winTop > contentTop[i] - rangeTop ){
             $('#mainmenu li.scroll')
             .removeClass('current')
-            .eq(i).addClass('current');          
+            .eq(i).addClass('current');
         }
     })
 
 };
-    
+
 // -------------------------------------------------------------
 //  Sticky Nav
 // -------------------------------------------------------------
-(function () {  
+(function () {
     function menuToggle(){
         var windowWidth = $(window).width();
         if(windowWidth > 991 ){
@@ -162,14 +176,43 @@ function Scroll() {
                 };
             });
         }else{
-            
+
             $('.home-two .navbar').addClass('navbar-fixed-top');
-                
-        };  
+
+        };
     }
 
     menuToggle();
-}()); 
+}());
 
+// -------------------------------------------------------------
+//  Form
+// -------------------------------------------------------------
 
+function sendFormData(event){
+    var dataToSend = {
+        name: $('.name').val(),
+        email: $('.email').val(),
+        subject: $('.subject').val(),
+        message: $('.message').val()
+    }
 
+    $.ajax({
+        method: 'POST',
+        dataType: 'json',
+        data: dataToSend,
+        url: 'server/php_mailer/mail_handler.php',
+        success: function(data){
+            console.log('success:', data);
+            $('.name').val('');
+            $('.email').val('');
+            $('.subject').val('');
+            $('.message').val('');
+        },
+        error: function(error){
+            console.log('fail', error);
+        }
+    })
+    event.preventDefault();
+
+}
