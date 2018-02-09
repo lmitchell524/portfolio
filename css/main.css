@@ -45,7 +45,7 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
+    font-weight: 500;
     color: whitesmoke;
 }
 
@@ -557,6 +557,7 @@ ul.sub-menu {
 .home-two .home-social {
     position: absolute;
     top: 40px;
+    margin-left: 5%;
 }
 
 .menu-two .home-social li+li {
@@ -573,8 +574,8 @@ ul.sub-menu {
 }
 
 .home-social i {
-    filter: invert(100%);
-    font-size: 2.5vmin;
+    color: white;
+    font-size: 3.5vmin;
 }
 
 
@@ -894,6 +895,43 @@ ul.sub-menu {
     position: relative;
     margin-bottom: 30px;
     overflow: hidden;
+    text-align: center;
+}
+
+.portfolio-overlay h3 {
+    font-size: 29px;
+}
+
+.portfolio-item1 {
+    background-image: url('../images/portfolio/finaltransmissions.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 200px;
+}
+
+.portfolio-item2 {
+    /* background-image: url('../images/portfolio/trothello.png'); */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 200px;
+}
+
+.portfolio-item3 {
+    background-image: url('../images/portfolio/trothello.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 200px;
+}
+
+.portfolio-item4 {
+    background-image: url('../images/portfolio/trivia_fighter.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 200px;
 }
 
 .portfolio-overlay {
@@ -937,8 +975,8 @@ ul.sub-menu {
     left: 0;
     font-size: 16px;
     font-weight: normal;
-    padding-left: 30px;
-    padding-bottom: 20px;
+    padding: 15px;
+    width: 100%;
 }
 
 .portfolio-info h3 {
@@ -951,17 +989,27 @@ ul.sub-menu {
     font-size: 22px;
     color: #fff;
     font-family: 'Montserrat', sans-serif;
-    font-weight: 600;
-    display: block;
+    display: inline-block;
 }
 
-.portfolio-info a i {
-    margin-right: 5%;
+.code {
+    float: right;
 }
+
+.live {
+    float: left;
+}
+
+/* .portfolio-info a i {
+    margin-right: 5%;
+} */
 
 .portfolio-info a:hover {
     color: #bb460d;
 }
+
+/* .portfolio-img {
+} */
 
 /*Magnific-popup overwrite CSS*/
 

@@ -113,14 +113,14 @@ $(function(){
 // MagnificPopup
 // -------------------------------------------------------------
 
-(function () {
-    $('.portfolio-info a').magnificPopup({
-      type: 'image',
-      gallery:{
-        enabled:true
-      }
-    });
-}());
+// (function () {
+//     $('.portfolio-info a').magnificPopup({
+//       type: 'image',
+//       gallery:{
+//         enabled:true
+//       }
+//     });
+// }());
 
 // -------------------------------------------------------------
 // Navigation Scroll
