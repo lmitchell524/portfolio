@@ -695,3 +695,15 @@
 		height: 70vh;
 	}
 }
+
+@media screen and (max-height: 412px){
+	.banner-info {
+		text-shadow: 3px 3px 1px black;
+	}
+
+	.portfolio-item {
+		max-width: 60%;
+		margin: 5% auto;
+		height: 70vh;
+	}
+}
