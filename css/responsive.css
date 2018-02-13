@@ -257,7 +257,7 @@
 		line-height: 45px;
 	}
 	.banner-info h3 {
-		font-size: 14px;
+		font-size: 5vmin;
 		letter-spacing: 15px;
 	}
 	.banner-content, #home-banner {
@@ -681,5 +681,17 @@
 	}
 	.rating-bar label {
 		font-size: 12px;
+	}
+}
+
+@media screen and (orientation: landscape){
+	.banner-info {
+		text-shadow: 3px 3px 1px black;
+	}
+
+	.portfolio-item {
+		max-width: 60%;
+		margin: 5% auto;
+		height: 70vh;
 	}
 }
