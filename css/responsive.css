@@ -75,9 +75,9 @@
   .collapse.in{
       display:block !important;
   }
-  .home-two .home-social {
-		top: 100px;
-	}
+  /* .home-two .home-social {
+		top: 10vh;
+	} */
 	.banner-content .banner-info {
 		top: 100%;
 		margin-top: -220px;
@@ -331,10 +331,11 @@
 		font-size: 20px;
 	}
 	.portfolio-item {
-		margin-bottom: 15px;
+		margin: 15px auto;
 	}
 	.portfolio-item img {
-		width: 100%;
+		width: 100vmin;
+		height: 50vmin;
 	}
 	.education-section hr,
 	.contact-section hr {
@@ -517,7 +518,7 @@
 		padding-left: 25px;
 	}
 	.logo {
-	    background-color: rgba(17, 17, 17, 0.93);
+	    background-color: black;
 	    height: 57px;
 	    padding: 0px;
 	    max-width: 60%;
@@ -560,6 +561,11 @@
 	.profile-section{
 		padding-top: 30px;
 	}
+
+	/* .img-responsive {
+		max-width: 45%;
+		margin: 5% auto;
+	} */
 }
 
 /* XS Portrait */
@@ -684,19 +690,19 @@
 	}
 }
 
-@media screen and (orientation: landscape){
+@media screen and (max-width: 768px) and (orientation: landscape){
 	.banner-info {
 		text-shadow: 3px 3px 1px black;
 	}
 
-	.portfolio-item {
+	.portfolio-content div .col-sm-6 {
 		max-width: 60%;
 		margin: 5% auto;
-		height: 70vh;
 	}
+
 }
 
-@media screen and (max-height: 412px){
+/* @media screen and (max-height: 412px){
 	.banner-info {
 		text-shadow: 3px 3px 1px black;
 	}
@@ -705,5 +711,5 @@
 		max-width: 60%;
 		margin: 5% auto;
 		height: 70vh;
-	}
+	} */
 }
