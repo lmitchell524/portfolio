@@ -557,7 +557,7 @@ ul.sub-menu {
     position: absolute;
     top: 100%;
     margin-top: -40px;
-    right: 0;
+    right: 2vmin;
     z-index: 100;
 }
 
@@ -602,7 +602,7 @@ ul.sub-menu {
 
 .about-info {
     font-size: 14px;
-    line-height: 4.75vmin;
+    line-height: 5vmin;
 }
 
 .about-info p {
