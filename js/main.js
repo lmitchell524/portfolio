@@ -39,6 +39,13 @@ $(document).ready(function(){
 $(function(){
     var navMain = $(".collapse");
     navMain.on("click", "a", null, function () {
+        var menuHeight = $("#mainmenu > .navbar-nav").height();
+        if(!$("#navigation > .navbar").hasClass('navbar-fixed-top')){
+            menuHeight *= 2;
+        }
+        console.log('height is '+ menuHeight);
+        $('html').animate({scrollTop: $(this.hash).offset().top -1-menuHeight}, 1000);
+
         navMain.collapse('hide');
     });
 });
@@ -130,15 +137,15 @@ $(window).scroll(function(event) {
     Scroll();
 });
 
-$('#mainmenu li a').on('click touchend', function() {
-    var menuHeight = $("#mainmenu > .navbar-nav").height();
-    if(!$("#navigation > .navbar").hasClass('navbar-fixed-top')){
-        menuHeight *= 2;
-    }
-    console.log('height is '+ menuHeight);
-    $('html').animate({scrollTop: $(this.hash).offset().top -1-menuHeight}, 1000);
-    return false;
-});
+// $('#mainmenu li a').on('click touchend', function() {
+//     var menuHeight = $("#mainmenu > .navbar-nav").height();
+//     if(!$("#navigation > .navbar").hasClass('navbar-fixed-top')){
+//         menuHeight *= 2;
+//     }
+//     console.log('height is '+ menuHeight);
+//     $('html').animate({scrollTop: $(this.hash).offset().top -1-menuHeight}, 1000);
+//     return false;
+// });
 
 // User define function
 function Scroll() {
