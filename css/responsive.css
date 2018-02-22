@@ -530,12 +530,12 @@
 	.logo img {
 		max-width: 75%;
 	}
-	.home-two .home-social {
+	/* .home-two .home-social {
 		top: 100%;
 		margin-top: -40px;
 		margin-left: 20px;
 		right: 0;
-	}
+	} */
 	.home-social i {
 		font-size: 4.5vmin;
 	}
@@ -561,11 +561,6 @@
 	.profile-section{
 		padding-top: 30px;
 	}
-
-	/* .img-responsive {
-		max-width: 45%;
-		margin: 5% auto;
-	} */
 }
 
 /* XS Portrait */
@@ -585,7 +580,7 @@
 		text-align: left;
 	}
 	.section-title h1, .home-two .section-title h1 {
-		font-size: 30px;
+		font-size: 7vmin;
 	}
 	.skill-section ul {
 		text-align: center;
