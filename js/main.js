@@ -130,7 +130,7 @@ $(window).scroll(function(event) {
     Scroll();
 });
 
-$('#mainmenu li a').click(function() {
+$('#mainmenu li a').on('click touchend', function() {
     var menuHeight = $("#mainmenu > .navbar-nav").height();
     if(!$("#navigation > .navbar").hasClass('navbar-fixed-top')){
         menuHeight *= 2;
