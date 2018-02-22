@@ -139,6 +139,7 @@ $(window).scroll(function(event) {
 
 $('#mainmenu li a').on('click touchend', function() {
     $('html, body').animate({scrollTop: $(this.hash).offset().top -1}, 1000);
+    $('.collapse').collapse('hide');
     // var menuHeight = $("#mainmenu > .navbar-nav").height();
     // if(!$("#navigation > .navbar").hasClass('navbar-fixed-top')){
     //     menuHeight *= 2;
