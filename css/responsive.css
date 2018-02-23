@@ -75,9 +75,9 @@
   .collapse.in{
       display:block !important;
   }
-  .home-two .home-social {
-		top: 100px;
-	}
+  /* .home-two .home-social {
+		top: 10vh;
+	} */
 	.banner-content .banner-info {
 		top: 100%;
 		margin-top: -220px;
@@ -257,7 +257,7 @@
 		line-height: 45px;
 	}
 	.banner-info h3 {
-		font-size: 14px;
+		font-size: 5vmin;
 		letter-spacing: 15px;
 	}
 	.banner-content, #home-banner {
@@ -331,10 +331,11 @@
 		font-size: 20px;
 	}
 	.portfolio-item {
-		margin-bottom: 15px;
+		margin: 15px auto;
 	}
 	.portfolio-item img {
-		width: 100%;
+		width: 100vmin;
+		height: 50vmin;
 	}
 	.education-section hr,
 	.contact-section hr {
@@ -517,7 +518,7 @@
 		padding-left: 25px;
 	}
 	.logo {
-	    background-color: rgba(17, 17, 17, 0.93);
+	    background-color: black;
 	    height: 57px;
 	    padding: 0px;
 	    max-width: 60%;
@@ -529,12 +530,12 @@
 	.logo img {
 		max-width: 75%;
 	}
-	.home-two .home-social {
+	/* .home-two .home-social {
 		top: 100%;
 		margin-top: -40px;
 		margin-left: 20px;
 		right: 0;
-	}
+	} */
 	.home-social i {
 		font-size: 4.5vmin;
 	}
@@ -579,7 +580,7 @@
 		text-align: left;
 	}
 	.section-title h1, .home-two .section-title h1 {
-		font-size: 30px;
+		font-size: 7vmin;
 	}
 	.skill-section ul {
 		text-align: center;
@@ -666,9 +667,6 @@
 	.home-two .banner-info {
 		padding-left: 15px;
 	}
-	.home-two .home-social {
-		right: 0;
-	}
 	.home-one .logo {
 		max-width: 80%;
 		height: 57px;
@@ -682,4 +680,28 @@
 	.rating-bar label {
 		font-size: 12px;
 	}
+}
+
+@media screen and (max-width: 768px) and (orientation: landscape){
+	.banner-info {
+		text-shadow: 3px 3px 1px black;
+	}
+
+	.portfolio-content div .col-sm-6 {
+		max-width: 60%;
+		margin: 5% auto;
+	}
+
+}
+
+/* @media screen and (max-height: 412px){
+	.banner-info {
+		text-shadow: 3px 3px 1px black;
+	}
+
+	.portfolio-item {
+		max-width: 60%;
+		margin: 5% auto;
+		height: 70vh;
+	} */
 }

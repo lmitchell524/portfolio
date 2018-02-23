@@ -56,11 +56,11 @@ ul {
 }
 
 a{
-    color: #2d3038;
+    color: white;
 }
 
 a:hover {
-    color: #00aeef;
+    color: #86c15e;
 }
 
 a, a:hover, a:active,
@@ -85,7 +85,7 @@ a:focus, button:focus, .btn:focus,
 }
 
 .home-two .section-title h1 {
-    font-size: 50px;
+    font-size: 6vmin;
     margin-top: 0;
 }
 
@@ -376,7 +376,7 @@ a:focus, button:focus, .btn:focus,
 }
 
 .logo {
-    background-color: rgba(17, 17, 17, 0.93);
+    background-color: black;
     height: 76px;
     padding: 9px 25px 10px 15px;
     /* width: 150px; */
@@ -526,7 +526,7 @@ ul.sub-menu {
 
 .banner-info h3 {
     color: whitesmoke;
-    font-size: 16px;
+    font-size: 4vmin;
     text-transform: uppercase;
     letter-spacing: 26px;
 }
@@ -551,13 +551,14 @@ ul.sub-menu {
     width: 100%;
     height: 100%;
     margin-left: 5%;
-    /* margin-top: -100px */
 }
 
 .home-two .home-social {
     position: absolute;
-    top: 40px;
-    margin-left: 5%;
+    top: 100%;
+    margin-top: -40px;
+    right: 2vmin;
+    z-index: 100;
 }
 
 .menu-two .home-social li+li {
@@ -601,11 +602,12 @@ ul.sub-menu {
 
 .about-info {
     font-size: 14px;
-    line-height: 24px;
+    line-height: 5vmin;
 }
 
 .about-info p {
-    font-size: 3vmin;
+    font-size: 5vmin;
+    margin-bottom: 5vmin;
 }
 
 .about-info .signature h1 {
@@ -616,7 +618,7 @@ ul.sub-menu {
 }
 
 .about-section address {
-    font-size: 16px;
+    font-size: 4vmin;
     line-height: 30px;
     margin-bottom: 40px;
 }
@@ -902,36 +904,9 @@ ul.sub-menu {
     font-size: 29px;
 }
 
-.portfolio-item1 {
-    background-image: url('../images/portfolio/finaltransmissions.png');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    height: 200px;
-}
-
-.portfolio-item2 {
-    /* background-image: url('../images/portfolio/trothello.png'); */
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    height: 200px;
-}
-
-.portfolio-item3 {
-    background-image: url('../images/portfolio/trothello.png');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    height: 200px;
-}
-
-.portfolio-item4 {
-    background-image: url('../images/portfolio/trivia_fighter.png');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    height: 200px;
+.portfolio-item-img {
+    width: 100%;
+    height: 30vmin;
 }
 
 .portfolio-overlay {
@@ -940,7 +915,6 @@ ul.sub-menu {
     left: 0;
     width: 100%;
     height: 100%;
-    /* background-color: #ef6e30; */
     color: #fff;
     -webkit-transition: all 500ms;
     -moz-transition: all 500ms;
