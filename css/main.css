@@ -391,10 +391,6 @@ a:focus, button:focus, .btn:focus,
     height: 100%;
 }
 
-.logo-transition {
-    transition-duration: 1s;
-}
-
 .menu-two .navbar-fixed-top {
     max-width: 1170px;
     margin: 0 auto;

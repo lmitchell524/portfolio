@@ -121,7 +121,7 @@ function Scroll() {
             $(window).on('scroll', function(){
                 if( $(window).scrollTop()>735 ){
                     $('.home-two .navbar').addClass('navbar-fixed-top fadeInDown');
-                    $('.home-two .navbar').removeClass('navbar-absolute  fadeInUp');
+                    $('.home-two .navbar').removeClass('navbar-absolute fadeInUp');
                 } else {
                     $('.home-two .navbar').removeClass('navbar-fixed-top fadeInDown');
                     $('.home-two .navbar').addClass('navbar-absolute fadeInUp');
