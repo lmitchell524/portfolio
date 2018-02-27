@@ -19,6 +19,9 @@ $(document).ready(function(){
         navMain.collapse('hide');
     });
     $('#contact-form').on('submit',sendFormData);
+    // $('.logo a').click(function() {
+    //
+    // })
 });
 
 // -------------------------------------------------------------
@@ -38,6 +41,7 @@ $(document).ready(function(){
 
 $(function(){
     var navMain = $(".collapse");
+    var mainBody = $('.main-wrapper');
     navMain.on("click", "a", null, function () {
         // var menuHeight = $("#mainmenu > .navbar-nav").height();
         // if(!$("#navigation > .navbar").hasClass('navbar-fixed-top')){
@@ -48,6 +52,9 @@ $(function(){
 
         navMain.collapse('hide');
     });
+    mainBody.on('click', function() {
+        navMain.collapse('hide');
+    })
 });
 
 // -------------------------------------------------------------
@@ -65,71 +72,6 @@ $(function(){
 }());
 
 // -------------------------------------------------------------
-// Progress Bar
-// -------------------------------------------------------------
-
-// (function () {
-//
-//     $('.progress-content').bind('inview', function(event, visible, visiblePartX, visiblePartY) {
-//         if (visible) {
-//             $.each($('div.progress-bar'),function(){
-//                 $(this).css('width', $(this).attr('aria-valuenow')+'%');
-//             });
-//             $(this).unbind('inview');
-//         }
-//     });
-//     $('.rating-bar').bind('inview', function(event, visible, visiblePartX, visiblePartY) {
-//         if (visible) {
-//             $.each($('div.progress-bar'),function(){
-//                 $(this).css('width', $(this).attr('aria-valuenow')+'%');
-//             });
-//             $(this).unbind('inview');
-//         }
-//     });
-//
-// }());
-
-
-
-
-// -------------------------------------------------------------
-// EasyPieChart
-// -------------------------------------------------------------
-//
-// (function () {
-//
-//     $('.language-skill').bind('inview', function(event, visible, visiblePartX, visiblePartY) {
-//         if (visible) {
-//             $('.chart').easyPieChart({
-//                 //your configuration goes here
-//                 easing: 'easeOut',
-//                 delay: 3000,
-//                 scaleColor: false,
-//                 animate: 2000,
-//                 onStep: function(from, to, percent) {
-//                     this.el.children[0].innerHTML = Math.round(percent);
-//                 }
-//
-//             });
-//         }
-//     });
-// }());
-
-
-// -------------------------------------------------------------
-// MagnificPopup
-// -------------------------------------------------------------
-
-// (function () {
-//     $('.portfolio-info a').magnificPopup({
-//       type: 'image',
-//       gallery:{
-//         enabled:true
-//       }
-//     });
-// }());
-
-// -------------------------------------------------------------
 // Navigation Scroll
 // -------------------------------------------------------------
 
@@ -137,7 +79,7 @@ $(window).scroll(function(event) {
     Scroll();
 });
 
-$('#mainmenu li a').on('click touchend', function() {
+$('.scroll a').on('click touchend', function() {
     $('html, body').animate({scrollTop: $(this.hash).offset().top -1}, 1000);
     $('.collapse').collapse('hide');
     // var menuHeight = $("#mainmenu > .navbar-nav").height();
@@ -156,18 +98,17 @@ function Scroll() {
     var winTop      =   $(window).scrollTop();
     var rangeTop    =   200;
     var rangeBottom =   500;
-    $('#mainmenu').find('.scroll a').each(function(){
+    $('.navbar').find('.scroll a').each(function(){
         contentTop.push( $( $(this).attr('href') ).offset().top);
         contentBottom.push( $( $(this).attr('href') ).offset().top + $( $(this).attr('href') ).height() );
     })
     $.each( contentTop, function(i){
         if ( winTop > contentTop[i] - rangeTop ){
-            $('#mainmenu li.scroll')
+            $('.navbar .scroll')
             .removeClass('current')
             .eq(i).addClass('current');
         }
     })
-
 };
 
 // -------------------------------------------------------------
@@ -179,12 +120,14 @@ function Scroll() {
         if(windowWidth > 991 ){
             $(window).on('scroll', function(){
                 if( $(window).scrollTop()>735 ){
-                    $('.home-two .navbar').addClass('navbar-fixed-top animated fadeInDown');
+                    $('.home-two .navbar').addClass('navbar-fixed-top fadeInDown');
+                    $('.home-two .navbar').removeClass('navbar-absolute  fadeInUp');
                 } else {
-                    $('.home-two .navbar').removeClass('navbar-fixed-top animated fadeInDown');
+                    $('.home-two .navbar').removeClass('navbar-fixed-top fadeInDown');
+                    $('.home-two .navbar').addClass('navbar-absolute fadeInUp');
                 };
             });
-        }else{
+        } else{
 
             $('.home-two .navbar').addClass('navbar-fixed-top');
 

@@ -223,8 +223,11 @@ a:focus, button:focus, .btn:focus,
     background-color: black;
 }
 
+#navigation {
+    position: relative;
+}
+
 .home-one .logo {
-    /*height: 65px;*/
     float: none;
     margin-left: 10px;
     padding: 4px 30px;
@@ -386,6 +389,10 @@ a:focus, button:focus, .btn:focus,
 .logo-img {
     filter: invert(100%);
     height: 100%;
+}
+
+.logo-transition {
+    transition-duration: 1s;
 }
 
 .menu-two .navbar-fixed-top {
@@ -581,6 +588,7 @@ ul.sub-menu {
 
 
 /* About Section */
+
 
 .about-section, .skill-section, .exprience-section, .education-section, .portfolio-section {
     border-bottom: 1px solid whitesmoke;
