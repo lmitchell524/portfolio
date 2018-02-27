@@ -44,6 +44,16 @@
 	    height: 64px;
 	    padding: 2px 15px;
 	}
+	.navbar-collapse.collapse {
+		float: left;
+	}
+
+	.navbar-absolute {
+	    position: absolute;
+	}
+	#about {
+		padding-top: 172px;
+	}
 }
 
 @media (max-width: 991px) {
@@ -231,6 +241,11 @@
 	}
 }
 
+@media (min-width: 768px){
+	.nav-container {
+		width: 100%
+	}
+}
 
 /* xs */
 @media (max-width: 767px) {
