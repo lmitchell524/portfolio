@@ -336,6 +336,7 @@
 	.portfolio-item img {
 		width: 100vmin;
 		height: 50vmin;
+		margin: 0 auto;
 	}
 	.education-section hr,
 	.contact-section hr {
