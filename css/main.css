@@ -978,16 +978,9 @@ ul.sub-menu {
     float: left;
 }
 
-/* .portfolio-info a i {
-    margin-right: 5%;
-} */
-
 .portfolio-info a:hover {
     color: #bb460d;
 }
-
-/* .portfolio-img {
-} */
 
 /*Magnific-popup overwrite CSS*/
 
@@ -1017,6 +1010,15 @@ img.mfp-img {
 
 
 /* Contact Section */
+
+#name-message, #email-message, #message {
+    color: #86c15e;
+    position: absolute;
+}
+
+input:-webkit-autofill {
+    background-color: red;
+}
 
 .contact-section {
     padding-bottom: 0;
@@ -1135,7 +1137,7 @@ img.mfp-img {
 }
 
 .contact .form-group {
-    margin-top: 20px;
+    margin-top: 25px;
     margin-bottom: 0;
 }
 
@@ -1191,7 +1193,6 @@ img.mfp-img {
 }
 
 .profile-section .section-padding {
-    /* padding-top: 110px; */
     padding-bottom: 120px;
 }
 
@@ -1202,7 +1203,6 @@ img.mfp-img {
 
 .profile-section .profile-info {
     margin-bottom: 70px;
-    /*overflow: hidden;*/
 }
 
 .profile-logo {
@@ -1429,7 +1429,7 @@ img.mfp-img {
 }
 
 /* Main Blog */
-.widget {
+/* .widget {
     margin-bottom: 30px;
     overflow: hidden;
 }
@@ -1496,12 +1496,12 @@ h3.widget_title {
 
 .widget ul ul li{
     padding-left: 15px;
-}
+} */
 
 /* Blog Details */
 
 
-#blog-details .section-title {
+/* #blog-details .section-title {
     margin-bottom: 40px;
 }
 
@@ -1588,7 +1588,7 @@ h3.widget_title {
 
 .post-action h3 a:hover {
     color: #87c05e;
-}
+} */
 
 /* ==========================================================================
     Extra Css

@@ -19,9 +19,9 @@ $(document).ready(function(){
         navMain.collapse('hide');
     });
     $('#contact-form').on('submit',sendFormData);
-    // $('.logo a').click(function() {
-    //
-    // })
+    $('.logo a').click(function() {
+
+    })
 });
 
 // -------------------------------------------------------------
@@ -141,6 +141,35 @@ function Scroll() {
 //  Form
 // -------------------------------------------------------------
 
+$('.submit-btn').click(function(event){
+    var inpObj = $('.email').val();
+    var inpObj2 = $('.message');
+    var inpObj3 = $('.name');
+       if (!inpObj3["0"].validity.valid) {
+           document.getElementById('name-message').innerHTML = "Please include your name";
+           return;
+       } else{
+           document.getElementById('name-message').innerHTML = null;
+
+       }
+       if (!inpObj.match(/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/)) {
+           document.getElementById('email-message').innerHTML = "Please enter a valid email";
+           return;
+       } else{
+           document.getElementById('email-message').innerHTML = null;
+
+       }
+       if (!inpObj2["0"].checkValidity()) {
+           document.getElementById('message').innerHTML = "Please include a message";
+           return;
+       } else{
+           document.getElementById('message').innerHTML = null;
+
+       }
+
+       sendFormData(event);
+});
+
 function sendFormData(event){
     var dataToSend = {
         name: $('.name').val(),
@@ -166,5 +195,4 @@ function sendFormData(event){
         }
     })
     event.preventDefault();
-
 }
