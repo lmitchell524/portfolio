@@ -76,10 +76,6 @@ a:focus, button:focus, .btn:focus,
     padding-bottom: 100px;
 }
 
-/* .section-title {
-    margin-bottom: 60px;
-} */
-
 .section-title h1 {
     font-size: 56px;
 }
@@ -367,7 +363,7 @@ a:focus, button:focus, .btn:focus,
 
 #navigation .navbar:before {
     right:0;
-    background-color: rgba(17, 17, 17, 0.93);
+    background-color: black;
     left: -100%;
 }
 
@@ -942,6 +938,11 @@ ul.sub-menu {
 .overlay-color-4 {
     background-color: #87c05e;
 }
+
+.overlay-color-5 {
+    background-color: #337ab7;
+}
+
 
 .portfolio-item:hover .portfolio-overlay {
     top: 0;
