@@ -368,7 +368,7 @@ a:focus, button:focus, .btn:focus,
 }
 
 #navigation .navbar:after {
-    left: 50%;
+    left: 30%;
     background-color: #87c05e;
     right: 0;
     z-index: -1;
@@ -555,7 +555,7 @@ ul.sub-menu {
 .home-two .home-social {
     position: absolute;
     top: 100%;
-    margin-top: -40px;
+    margin-top: -50px;
     right: 2vmin;
     z-index: 100;
 }
