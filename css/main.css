@@ -581,6 +581,10 @@ ul.sub-menu {
 
 /* About Section */
 
+.profile-image {
+    width: 25%;
+    margin-left: 10%;
+}
 
 .about-section, .skill-section, .exprience-section, .education-section, .portfolio-section {
     border-bottom: 1px solid whitesmoke;
@@ -606,7 +610,7 @@ ul.sub-menu {
 }
 
 .about-info p {
-    font-size: 5vmin;
+    font-size: 4vmin;
     margin-bottom: 5vmin;
 }
 
@@ -618,7 +622,7 @@ ul.sub-menu {
 }
 
 .about-section address {
-    font-size: 4vmin;
+    font-size: 3vmin;
     line-height: 30px;
     margin-bottom: 40px;
 }
